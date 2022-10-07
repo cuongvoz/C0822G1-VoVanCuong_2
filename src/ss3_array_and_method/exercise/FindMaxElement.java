@@ -10,10 +10,10 @@ public class FindMaxElement {
         System.out.print("Enter size Col : ");
         int sizeN = scanner.nextInt();
         double[][] matrix = new double[sizeM][sizeN];
-        for (int i = 0; i < matrix.length;i++) {
-            matrix[i] =  new double[sizeN];
+        for (int i = 0; i < matrix.length; i++) {
+            matrix[i] = new double[sizeN];
             for (int j = 0; j < matrix[i].length; j++) {
-                System.out.print("Enter value of [" + i +"][" + j + "] : ");
+                System.out.print("Enter value of [" + i + "][" + j + "] : ");
                 matrix[i][j] = scanner.nextDouble();
             }
         }

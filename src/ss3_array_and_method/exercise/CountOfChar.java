@@ -10,14 +10,14 @@ public class CountOfChar {
         System.out.print("Enter your char : ");
         int count = 0;
         char character = scanner.nextLine().charAt(0);
-        for (int i = 0; i < str.length();i++) {
+        for (int i = 0; i < str.length(); i++) {
             if (character == str.charAt(i)) {
                 count++;
             }
         }
         if (count > 0) {
             System.out.println("Số Lần Xuất Hiện Của Kí Tự : " + character + " Là : " + count);
-         } else {
+        } else {
             System.out.println("Kí Tự Không Có Trong Chuỗi");
         }
 

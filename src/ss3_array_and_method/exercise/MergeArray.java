@@ -20,11 +20,11 @@ public class MergeArray {
             System.out.print("Enter number of index array 2 : [" + i + "] ");
             arr2[i] = scanner.nextInt();
         }
-        for (int i = 0 ; i < arr1.length;i++) {
+        for (int i = 0; i < arr1.length; i++) {
             arr3[i] = arr1[i];
         }
         int index = arr1.length;
-        for (int i = 0;i< arr2.length;i++) {
+        for (int i = 0; i < arr2.length; i++) {
             arr3[index] = arr2[i];
             index++;
         }
