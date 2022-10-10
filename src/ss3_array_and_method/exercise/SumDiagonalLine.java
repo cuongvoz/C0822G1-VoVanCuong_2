@@ -31,7 +31,6 @@ public class SumDiagonalLine {
         int a = 0;
         for (int i = arr.length - 1; i >= 0; i--) {
             for (int j = a; j < arr[i].length; j++) {
-                if (arr[i][j] != arr1[i])
                     sum += arr[i][j];
                 break;
             }
