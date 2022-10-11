@@ -3,25 +3,25 @@ package ss4_class_and_object.exercise.exercise_1;
 public class QuadraticEquation {
     private double a, b, c;
 
-    public QuadraticEquation(double a, double b, double c) {
+     QuadraticEquation(double a, double b, double c) {
         this.a = a;
         this.b = b;
         this.c = c;
     }
 
-    public double getA() {
+     double getA() {
         return this.a;
     }
 
-    public double getB() {
+     double getB() {
         return this.b;
     }
 
-    public double getC() {
+     double getC() {
         return this.c;
     }
 
-    public void condition() {
+     void condition() {
         if (getA() == 0) {
             if (getB() == 0) {
                 if (getC() == 0) {
@@ -35,15 +35,15 @@ public class QuadraticEquation {
         }
     }
 
-    public double getDiscriminant() {
+     double getDiscriminant() {
         return Math.pow(getB(),2) - (4 * getA() * getC());
     }
 
-    public double getRoot1() {
+     double getRoot1() {
         return (-getB() + Math.sqrt(Math.pow(getB(),2) - 4 * getA() * getC())) / (2 * getA());
     }
 
-    public double getRoot2() {
+     double getRoot2() {
         return (-getB() - Math.sqrt(Math.pow(getB(),2) - 4 * getA() * getC())) / (2 * getA());
     }
 

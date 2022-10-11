@@ -1,4 +1,4 @@
-package ss4_class_and_object.exercise_3;
+package ss4_class_and_object.exercise.exercise_3;
 
 public class Main {
     private int startTime;
