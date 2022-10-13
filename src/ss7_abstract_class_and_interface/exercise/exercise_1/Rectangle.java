@@ -1,12 +1,14 @@
 package ss7_abstract_class_and_interface.exercise.exercise_1;
 
-public class Rectangle extends Shape{
+public class Rectangle extends Shape {
     private double width = 1.0;
     private double height = 1.0;
     private String name = "Rectangle";
-    public Rectangle(){
+
+    public Rectangle() {
 
     }
+
     public Rectangle(String color, boolean filled) {
     }
 
@@ -25,8 +27,6 @@ public class Rectangle extends Shape{
         this.width = width;
         this.height = height;
     }
-
-
 
 
     public double getWidth() {
@@ -55,7 +55,7 @@ public class Rectangle extends Shape{
 
     @Override
     public String toString() {
-        return "A Rectangle with width = "+ getWidth() +" and length="+getHeight() +", which is a subclass of " + super.toString();
+        return "A Rectangle with width = " + getWidth() + " and length=" + getHeight() + ", which is a subclass of " + super.toString();
     }
 
     @Override
