@@ -9,43 +9,43 @@ public class Fan {
     private double radius = 5;
     private String color = "Blue";
 
-     int getSpeed() {
+    public int getSpeed() {
         return this.speed;
     }
 
-     void setSpeed(int speed) {
+    public void setSpeed(int speed) {
         this.speed = speed;
     }
 
-     boolean isOn() {
+    public boolean isOn() {
         return this.on;
     }
 
-     void setOn() {
+    public void setOn() {
         this.on = true;
     }
 
-     void setOff() {
+    public void setOff() {
         this.on = false;
     }
 
-     double getRadius() {
+    public double getRadius() {
         return radius;
     }
 
-     void setRadius(double radius) {
+    public void setRadius(double radius) {
         this.radius = radius;
     }
 
-     String getColor() {
+    public String getColor() {
         return this.color;
     }
 
-     void setColor(String color) {
+    public void setColor(String color) {
         this.color = color;
     }
 
-     Fan() {
+    public Fan() {
     }
 
     @Override

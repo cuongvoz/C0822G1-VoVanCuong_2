@@ -2,30 +2,31 @@ package ss6_inhertiance.practice.shape_object;
 
 public class Square extends Rectangle {
     private double side = 1;
-     Square() {
-     }
-     Square(double side) {
+
+    public Square() {
+    }
+
+    Square(double side) {
         super(side, side);
     }
 
-     Square(double side, String color, boolean filled) {
+    public Square(double side, String color, boolean filled) {
         super(color, filled);
         this.side = side;
     }
 
-     double getSide() {
+    public double getSide() {
         return getWidth();
     }
 
-     void setSide(double side) {
+    public void setSide(double side) {
         setWidth(side);
     }
 
     @Override
-     void setWidth(double width) {
+    public void setWidth(double width) {
         setSide(width);
     }
-
 
 
     @Override

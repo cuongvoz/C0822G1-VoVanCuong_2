@@ -1,9 +1,14 @@
-package ss6_inhertiance.practice.shape_object;
+package ss7_abstract_class_and_interface.exercise.exercise_1;
 
-public class Circle extends Shape {
+public class Circle extends Shape{
     private double radius = 1.0;
-
+    private String name = "Circle";
     public Circle() {
+    }
+
+    @Override
+    public String getName() {
+        return this.name;
     }
 
     public Circle(double radius) {
@@ -34,5 +39,10 @@ public class Circle extends Shape {
     @Override
     public String toString() {
         return "A Circle with radius = "+ getRadius() +", which is a subclass of " + super.toString();
+    }
+
+    @Override
+    public void resize(double percent) {
+      setRadius(getRadius() + getRadius() * percent / 100);
     }
 }
