@@ -43,7 +43,7 @@ public class Rectangle extends Shape {
         return 2 * (getWidth() * getHeight());
     }
 
-    double getArea() {
+    public double getArea() {
         return getHeight() * getWidth();
     }
 

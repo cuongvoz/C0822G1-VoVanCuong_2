@@ -6,6 +6,7 @@ public abstract class Shape {
 
     public Shape() {
     }
+
     public Shape(String color, boolean filled) {
         this.color = color;
         this.filled = filled;
@@ -27,8 +28,12 @@ public abstract class Shape {
         this.filled = filled;
     }
 
+    public abstract double getPerimeter();
+
+    public abstract double getArea();
+
     @Override
     public String toString() {
-        return "A Shape with " + getColor()+" and " + (isFilled() ? "Filled":"Not Filled");
+        return "A Shape with " + getColor() + " and " + (isFilled() ? "Filled" : "Not Filled");
     }
 }
