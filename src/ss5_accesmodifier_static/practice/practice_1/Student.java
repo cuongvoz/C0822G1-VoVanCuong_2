@@ -5,7 +5,7 @@ package ss5_accesmodifier_static.practice.practice_1;
     private String name;
     private static String college = "BBDITT";
 
-     Student(int r, String n) {
+     public Student(int r, String n) {
        this.rollno = r;
        this.name = n;
     }
@@ -16,4 +16,10 @@ package ss5_accesmodifier_static.practice.practice_1;
         System.out.println("Name is : " + this.name + " and rollno is : " + this.rollno);
         System.out.println("Class Name is " + college);
     }
-}
+
+     public String getName() {
+         return this.name;
+     }
+
+
+ }
