@@ -32,15 +32,19 @@ public class MyArrayListTest {
     public static void main(String[] args) {
         Student a = new Student(3, "Cường");
         Student b = new Student(65, "Định");
+        Student z = new Student(65, "Định");
+        Student x = new Student(65, "Định");
         Student c = new Student(12, "Nghĩa");
         Student d = new Student(65, "Tài");
 
         MyArrayList<Student> studentList = new MyArrayList<>();
         studentList.add(a);
         studentList.add(b);
+        studentList.add(z);
+        studentList.add(x);
         studentList.add(c);
         studentList.add(d);
-        studentList.remove(1);
+        studentList.remove(4);
         MyArrayList<Student> myArrayList = studentList.clone();
         for (int i = 0; i < myArrayList.size(); i++) {
             System.out.print("ID : " + myArrayList.get(i).getId());

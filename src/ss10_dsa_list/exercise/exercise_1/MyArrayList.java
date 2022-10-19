@@ -18,20 +18,19 @@ public class MyArrayList<E> {
             throw new IllegalArgumentException("Capacity " + capacity);
         }
     }
-    public E remove(int index) {
+    public void remove(int index) {
         if (index < 0 || index > elements.length) {
             throw new IllegalArgumentException("Error index " + index);
         } else {
-            E element = (E) elements[index];
-            for (int i = 0 ; i < size - 1;i++) {
-                elements[i] = elements[i+1];
+            for (int i = index; i < size;i++) {
+                elements[i] = elements[i + 1];
+            }
+                elements[size] = null;
+                size--;
 
             }
-            elements[size-1] = null;
-            size--;
-            return element;
         }
-    }
+
     public MyArrayList<E> clone(){
         MyArrayList<E> v = new MyArrayList<>();
         v.elements = Arrays.copyOf(elements,size);
