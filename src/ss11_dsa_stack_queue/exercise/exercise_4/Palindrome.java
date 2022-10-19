@@ -9,20 +9,17 @@ public class Palindrome {
         System.out.print("Bạn Nhập Chuỗi Vào Đây : ");
         String text = scanner.nextLine();
         String textFix = text.toLowerCase();
-        for (int i = 0; i < textFix.length();i++) {
+        for (int i = 0; i < textFix.length(); i++) {
             queue.add(textFix.charAt(i));
             stack.push(textFix.charAt(i));
         }
         String check = "Đây là chuỗi palindrome";
-        for (int i = 0;i < textFix.length();i++) {
+        for (int i = 0; i < textFix.length(); i++) {
             if (!queue.poll().equals(stack.pop())) {
                 check = "Không phải là chuỗi palindrome";
                 break;
             }
         }
         System.out.print(check);
-
-
-
     }
 }
