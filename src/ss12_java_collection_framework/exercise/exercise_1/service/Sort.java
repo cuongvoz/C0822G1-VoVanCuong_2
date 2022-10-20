@@ -7,7 +7,7 @@ import java.util.Comparator;
 public class Sort implements Comparator<Product> {
 
     public int compare(Product product1, Product product2) {
-        if (product1.getGiaTien() > product2.getGiaTien()) {
+        if (product1.getPrice() > product2.getPrice()) {
             return 1;
         }
         return -1;

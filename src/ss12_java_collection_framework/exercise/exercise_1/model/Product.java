@@ -18,7 +18,7 @@ public class Product {
         this.name = name;
     }
 
-    public double getGiaTien() {
+    public double getPrice() {
         return price;
     }
 
@@ -38,6 +38,6 @@ public class Product {
     public String toString() {
         return "ID " + getId() +
                 ": Tên Sản Phẩm: " + getName() +
-                ", Và Giá là " + getGiaTien()+ " VNĐ";
+                ", Và Giá là " + getPrice()+ " VNĐ";
     }
 }
