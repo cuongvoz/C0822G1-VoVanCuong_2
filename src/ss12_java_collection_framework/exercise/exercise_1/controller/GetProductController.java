@@ -9,17 +9,15 @@ public class GetProductController {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập Tên Sản Phẩm Bạn Muốn Tìm Kiếm : ");
         String name = scanner.nextLine();
-        int index = -1;
+        boolean check = false;
         for (int i = 0; i < ListProduct.arrayList.size(); i++) {
             if (ListProduct.arrayList.get(i).getName().equals(name)) {
-                index = i;
-                break;
+                System.out.println(ListProduct.arrayList.get(i));
+                check = true;
             }
         }
-        if (index == -1) {
+        if (!check) {
             System.out.println("Sản Phẩm Không Tồn Tại");
-        } else {
-            System.out.println(ListProduct.arrayList.get(index));
         }
         ChoiceProduct.choiceProduct();
     }
