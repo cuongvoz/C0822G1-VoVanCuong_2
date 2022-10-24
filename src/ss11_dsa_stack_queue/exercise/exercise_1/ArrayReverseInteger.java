@@ -8,23 +8,18 @@ public class ArrayReverseInteger {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập độ dài mảng : ");
         int size = Integer.parseInt(scanner.nextLine());
-        int[] array = new int[size];
         for (int i = 0 ; i < size;i++) {
             System.out.print("Nhập Phần Tử " + i + " : ");
-            int number = Integer.parseInt(scanner.nextLine());
-            stack.push(number);
+            stack.push(Integer.parseInt(scanner.nextLine()));
         }
-        System.out.println("Stack Vừa Nhập Là " + stack);
-        int i = 0;
-        while (i < size) {
+        System.out.println("Stack vừa nhập là " + stack);
+        int[] array = new int[stack.size()];
+        for (int i = 0 ; i < array.length;i++) {
             array[i] = stack.pop();
-            i++;
         }
-        int z = 0;
-        do {
-            stack.push(array[z]);
-            z++;
-        } while (z < size);
-        System.out.println("Stack Đảo Ngược Là : " + stack);
+        for (int i = 0 ; i < array.length;i++) {
+            stack.push(array[i]);
+        }
+        System.out.println("Mảng stack hiện tại là " + stack);
     }
 }
