@@ -1,10 +1,13 @@
 package case_study.mvc.controllers;
 
+import case_study.mvc.service.impl.FacilityServiceImpl;
+
 import java.util.Scanner;
 
 public class FacilityController {
     public static void getFacilityManagement() {
         System.out.println();
+        FacilityServiceImpl facilityService = new FacilityServiceImpl();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Facility Management");
         System.out.println("1\tDisplay list facility\n" +
@@ -20,10 +23,16 @@ public class FacilityController {
             }
             switch (choice) {
                 case 1:
+                    facilityService.display();
+                    getFacilityManagement();
                     break;
                 case 2:
+                    facilityService.add();
+                    getFacilityManagement();
                     break;
                 case 3:
+                    facilityService.displayMaintenance();
+                    getFacilityManagement();
                     break;
                 case 4:
                     FuramaController.displayMainMenu();

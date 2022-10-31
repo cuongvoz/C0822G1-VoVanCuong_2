@@ -1,4 +1,6 @@
 package case_study.mvc.service.impl;
 
-public class BookingServiceImpl {
+import case_study.mvc.service.IBookingService;
+
+public class BookingServiceImpl implements IBookingService {
 }

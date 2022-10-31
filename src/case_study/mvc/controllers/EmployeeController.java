@@ -1,10 +1,13 @@
 package case_study.mvc.controllers;
 
+import case_study.mvc.service.impl.EmployeeServiceImpl;
+
 import java.util.Scanner;
 
 public class EmployeeController {
     public static void getEmployeeManagement() {
         System.out.println();
+        EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Employee Management");
         System.out.println("1\tDisplay list employees\n" +
@@ -18,12 +21,20 @@ public class EmployeeController {
             choice = Integer.parseInt(scanner.nextLine());
             switch (choice){
                 case 1:
+                    employeeService.display();
+                   getEmployeeManagement();
                     break;
                 case 2:
+                    employeeService.add();
+                    getEmployeeManagement();
                     break;
                 case 3:
+                    employeeService.delete();
+                    getEmployeeManagement();
                     break;
                 case 4:
+                    employeeService.edit();
+                    getEmployeeManagement();
                     break;
                 case 5:
                     FuramaController.displayMainMenu();
